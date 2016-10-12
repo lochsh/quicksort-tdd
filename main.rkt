@@ -3,10 +3,6 @@
 (define (qsort lst)
   (cond
     [(> 2 (length lst)) lst]
-    [(eq? 2 (length lst))
-      (if (> (car lst) (car (cdr lst)))
-        (reverse lst)
-        lst)]
     [else
       (let*
         ([pivot (car lst)]

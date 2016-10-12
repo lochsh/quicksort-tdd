@@ -13,4 +13,4 @@
 (check-equal? (qsort (list 1 2 3 4)) (list 1 2 3 4) "Doesn't unsort lists of length greater than three.")
 (check-equal? (qsort (list 3 1 4 2)) (list 1 2 3 4) "Sorts list of length four.")
 (check-equal? (qsort (list 3 3 4 2)) (list 2 3 3 4) "Keeps repeated elements")
-(check-equal? (qsort (list 65 0 -1 8 7 3 2)) (list -1 0 2 3 7 8 65) "Lol")
+(check-equal? (qsort (list 65 0 -1 8 7 3 2)) (list -1 0 2 3 7 8 65) "Sorts generic list of integers, some negative.")
